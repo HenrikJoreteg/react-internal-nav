@@ -1,0 +1,32 @@
+{
+  "name": "react-internal-nav",
+  "description": "React component with single 'onInternalNav' callback for handling clicks on <a> local to domain.",
+  "version": "0.0.0",
+  "author": "Henrik Joreteg <henrik@joreteg.com>",
+  "bugs": {
+    "url": "https://github.com/henrikjoreteg/react-internal-nav/issues"
+  },
+  "dependencies": {
+    "local-links": "^1.4.0"
+  },
+  "devDependencies": {
+    "standard": "^4.5.4"
+  },
+  "homepage": "https://github.com/henrikjoreteg/react-internal-nav#readme",
+  "keywords": [
+    "internal",
+    "nav",
+    "navigation",
+    "react",
+    "router"
+  ],
+  "license": "MIT",
+  "main": "react-internal-nav.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrikjoreteg/react-internal-nav.git"
+  },
+  "scripts": {
+    "test": "standard"
+  }
+}
