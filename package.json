@@ -1,7 +1,7 @@
 {
   "name": "react-internal-nav",
   "description": "React component with single 'onInternalNav' callback for handling clicks on <a> local to domain.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Henrik Joreteg <henrik@joreteg.com>",
   "bugs": {
     "url": "https://github.com/henrikjoreteg/react-internal-nav/issues"
