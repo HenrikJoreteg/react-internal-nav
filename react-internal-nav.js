@@ -28,7 +28,7 @@ module.exports = React.createClass({
   },
 
   render: function () {
-    return React.createElement(this.props.tagType, React.__spread({onClick: this.onPotentialNav}, this.props),
+    return React.createElement(this.props.tagType, Object.assign({onClick: this.onPotentialNav}, this.props),
       this.props.children
     )
   }
