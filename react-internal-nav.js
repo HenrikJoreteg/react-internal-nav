@@ -28,8 +28,12 @@ module.exports = React.createClass({
   },
 
   render: function () {
-    return React.createElement(this.props.tagType, React.__spread({onClick: this.onPotentialNav}, this.props),
-      this.props.children
-    )
+    var props = {}
+
+    for (var key in this.props) {
+      props[key] = this.props[key]
+    }
+    props.onClick = this.onPotentialNav
+    return React.createElement(this.props.tagType, props, this.props.children)
   }
 })
