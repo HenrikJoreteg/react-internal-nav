@@ -29,11 +29,17 @@ module.exports = React.createClass({
 
   render: function () {
     var props = {}
+    var tagType = this.props.tagType;
 
     for (var key in this.props) {
       props[key] = this.props[key]
     }
-    props.onClick = this.onPotentialNav
-    return React.createElement(this.props.tagType, props, this.props.children)
+    props.onClick = this.onPotentialNav;
+    // Prevent unknown prop error:
+    // https://github.com/facebook/react/pull/6800
+    delete props.onInternalNav;
+    delete props.tagType;
+
+    return React.createElement(tagType, props, this.props.children)
   }
 })
