@@ -6,7 +6,7 @@ Using this means you don't need anything special to link within your app, you ju
 
 The component will listen to clicks and determine whether the link clicked is internal to the app or not, using the excellent [local-links](https://www.npmjs.com/package/local-links) module by [@LukeKarrys](https://twitter.com/lukekarrys).
 
-The `onInternalNav` callbac will be called with the `pathname` as the argument (including beginning slash, i.e. `/some-path`) whenever a user navigates by clicking a link within the app as long as...
+The `onInternalNav` callback will be called with the `pathname` as the argument (including beginning slash, i.e. `/some-path`) whenever a user navigates by clicking a link within the app as long as...
 
 1. the user wasn't holding modifier keys (thiw way, ctrl/cmd + click still open in new window)
 2. the link doesn't have `_target='blank'`
